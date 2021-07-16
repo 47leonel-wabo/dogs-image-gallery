@@ -62,22 +62,21 @@ const BreedsList = ({dispatchBreedChange}) => {
                     </div>
                     <br />
                     <nav className="pagination is-rounded" aria-label='pagination'>
-                        <a
+                        <button
                         href=""
                         className="pagination-previous" 
                         onClick={() => handlePageClick(currentPage - 1)}
                         disabled={currentPage <= 0}
                         >
                             Previous
-                        </a>
-                        <a
-                        href=""
+                        </button>
+                        <button
                         className="pagination-previous" 
                         onClick={() => handlePageClick(currentPage + 1)}
                         disabled={currentPage + 1 >= totalPages}
                         >
                             Next
-                        </a>
+                        </button>
                     </nav>
                 </>
             )}
